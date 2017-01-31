@@ -1,0 +1,46 @@
+<html style="height:42px;">
+    <head>
+        <style>
+            input, select, textarea{
+                color: #f1f1f1;
+                outline: #f1f1f1;
+                margin-bottom:10px;
+            }
+            label {
+              display: block;
+              padding-left: 15px;
+              text-indent: -15px;
+            }
+            .check {
+              width: 13px;
+              height: 12px;
+              padding: 0;
+              margin:0;
+              vertical-align: bottom;
+              position: relative;
+              top: -1px;
+              *overflow: hidden;
+            }
+        </style>
+    </head>
+    <body style="height:42px; background-color:#262626; color:#f1f1f1;">
+        <h3 style="text-align:center;">
+            GS Trade Search
+        </h3>
+        <form>
+            <input type="text" name="game" id="game" style=" padding-left:2px; padding-right:2px; background-color:rgba(255,255,255,0.2); border-style:none;">
+            </br>
+        </form>
+        <form id="radioButtons">
+        <label style="margin-top:-10px;"><input id="rb" class="check" type="radio" name="gcCheck" value="all" checked> All</label>
+        </br>
+        <label style="margin-top:-10px;"><input id="rb" class="check" type="radio" name="gcCheck" value="game"> Games</label>
+        </br>
+        <label style="margin-top:-10px;"><input id="rb" class="check" type="radio" name="gcCheck" value="console"> Consoles</label>
+        </br>
+        <label style="margin-top:-10px;"><input id="rb" class="check" type="radio" name="gcCheck" value="controller"> Accessories/Controllers</label>
+        </form>
+        <script src="lookup.js"></script>
+        <script src="focus.js"></script>
+    </body>
+</html>
